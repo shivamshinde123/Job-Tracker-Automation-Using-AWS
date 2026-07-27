@@ -1,0 +1,12 @@
+{
+  "fileLocations": [
+    {
+      "URIPrefixes": [
+        "s3://job-application-tracker-data/job-data/"
+      ]
+    }
+  ],
+  "globalUploadSettings": {
+    "format": "JSON"
+  }
+}
