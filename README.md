@@ -30,6 +30,8 @@ A fully serverless pipeline that reads job application emails from Gmail every n
 
 ## Architecture
 
+![Flow diagram: overall system flow, what happens inside the Lambda function, and how S3 data turns into the dashboard](job-tracker-dashboard.png)
+
 ```
 EventBridge Scheduler (cron, 11:59pm America/New_York)
         │
@@ -401,5 +403,6 @@ Real, diagnosed-from-actual-data bugs, keeping them documented so they aren't re
 ├── requirements.txt                   — dependencies for the Lambda layer
 ├── job-tracker-lambda-permissions.json — IAM inline policy (Step 5)
 ├── job-data-manifest.json             — QuickSight manifest file (Step 9)
+├── job-tracker-dashboard.png          — flow diagram (Architecture)
 └── .gitignore                         — excludes secrets, venv, build artifacts
 ```
