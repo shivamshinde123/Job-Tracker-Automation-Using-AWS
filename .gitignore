@@ -1,0 +1,19 @@
+# Secrets, never commit these
+client_secret.json
+*.pem
+*.key
+.env
+
+# Local Python environment and dependencies
+venv/
+python/
+__pycache__/
+*.pyc
+
+# Build artifacts
+job-tracker-gmail-deps.zip
+*.zip
+
+# OS/editor noise
+.DS_Store
+.vscode/
